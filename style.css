@@ -167,3 +167,148 @@ html, body{
     font-weight: 400;
     text-decoration: none;
 }
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+    padding-top: 10vh;
+    position: relative;
+}
+
+#video-container{
+    height: 65vh;
+    width: 71vw;
+    position: relative;
+    left: 28%;
+    top: 10%;
+    background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
+}
+
+#video-container #video-crsr{
+    height: 10vw;
+    width: 10vw;
+    background-color: #FFA63D;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 999;
+    top: -13%;
+    left: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#video-crsr i{
+    font-size: 2vw;
+}
+
+#video-container img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #0B0B0B;
+}
+
+#page4{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #151515;
+    padding: 4vh 0;
+}
+
+#page4-content{
+    width: 72vw;
+    margin-left: 26vw;
+}
+
+#page4-content h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+}
+
+#page4-content .underline{
+    height: 2px;
+    width: 93%;
+    background-color: #ffffff88;
+    margin: 4vw 0;
+}
+
+#page4-content p{
+    font-size: 2.5vw;
+    width: 54%;
+}
+
+#page4-flex{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vw;
+}
+
+#page4-flex img{
+    width: 60%;
+}
+
+#page4-flex p{
+    font-size: 1.1vw;
+    width: 36%;
+}
+
+#page4-blueblock{
+    position: relative;
+    height: 80vh;
+    width: 42vw;
+    background-color: #3F7DF4;
+    padding: 3.5vw 4vw;
+    margin-top: -20vh;
+    margin-left: 25vw;
+}
+
+#page4-blueblock h3{
+    font-size: 1.6vw;
+    font-weight: 500;
+}
+
+.blue-elem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #ffffffda;
+    padding: 2vw 0vw;
+}
+
+#page4-blueblock h5{
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+#line-below-blueblock{
+    height: 2px;
+    width: 93%;
+    background-color: #ffffff88;
+    margin: 10vw 0 2vw 0;
+}
+
+#page4-content h4{
+    font-weight: 400;
+    font-size: 1.3vw;
+}
+
+#page5{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #030303;
+}
