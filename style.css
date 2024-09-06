@@ -117,6 +117,7 @@ html, body{
     height: 100vh;
     width: 100%;
     background-color: #151515;
+    position: relative;
 }
 
 #page1 #nav{
@@ -147,6 +148,16 @@ html, body{
 
 .content:nth-child(2){
     margin-top: 8vh;
+}
+
+.content:nth-child(2)::before{
+    position: absolute;
+    content: "01";
+    font-size: 3vw;
+    font-family: "silk serif";
+    font-weight: 900;
+    top: 28%;
+    left: 21%;
 }
 
 .content h1{
@@ -232,11 +243,21 @@ html, body{
 #page4-content{
     width: 72vw;
     margin-left: 26vw;
+    position: relative;
 }
 
 #page4-content h1{
     font-size: 7vw;
     text-transform: uppercase;
+}
+
+#page4-content h1::before{
+    content: "03";
+    font-family: "silk serif";
+    font-size: 3vw;
+    position: absolute;
+    left: -10%;
+    top: 0.5%;
 }
 
 #page4-content .underline{
@@ -310,5 +331,134 @@ html, body{
 #page5{
     min-height: 100vh;
     width: 100%;
-    background-color: #030303;
+    background-color: #151515;
+    padding: 3vw 0;
+    overflow-x: hidden;
+}
+
+.page5-elem-odd, .page5-elem-even{
+    white-space: nowrap;
+    /* background-color: red; */
+}
+
+.page5-elem-odd h1{
+    font-size: 8vw;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 16px;
+    animation-name: page5-elem-reverse-anime;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.page5-elem-even h1{
+    font-size: 8vw;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 500;
+    font-family: "silk serif";
+    display: inline-block;
+    margin-right: 16px;
+    animation-name: page5-elem-forward-anime;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes page5-elem-reverse-anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+@keyframes page5-elem-forward-anime {
+    from{
+        transform: translateX(calc(-100% - 20px));
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+#footer{
+    height: 90vh;
+    width: 100%;
+    padding: 2vw 0;
+    position: relative;
+}
+
+#footer h1::before{
+    content: "04";
+    position: absolute;
+    font-family: "silk serif";
+    font-size: 3vw;
+    left: 20%;
+    top: 7%;
+}
+
+#footer-content{
+    height: 100%;
+    width: 65vw;
+    margin-left: 26vw;
+}
+
+#footer-content h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    height: 25%;
+    font-weight: 400;
+}
+
+#footer-content h1 i{
+    font-size: 8vw;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+
+#footer-content h1:hover{
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+
+.footer-underline{
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff88;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+}
+
+.box{
+    width: 30%;
+}
+
+.box h6{
+    margin-bottom: 2vw;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+.box h5{
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+#footer-information{
+    display: flex;
+    align-items: flex-start;
+    gap: 10vw;
+}
+
+#footer-content h4{
+    font-size: 1.5vw;
+    font-weight: 500;
 }
