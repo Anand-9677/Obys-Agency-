@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +11,17 @@
 html, body{
     height: 100%;
     width: 100%;
+}
+
+#crsr{
+    height: 2.5vw;
+    width: 2.5vw;
+    border-radius: 50%;
+    border: 1.5px solid rgba(255, 255, 255, 0.743);
+    position: fixed;
+    z-index: 99;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
 }
 
 #loader{
@@ -104,4 +117,53 @@ html, body{
     height: 100vh;
     width: 100%;
     background-color: #151515;
+}
+
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.5vw 5.5vw;
+}
+
+#nav #nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5vw;
+}
+
+#nav-part2 h4{
+    font-size: 1.2vw;
+    font-weight: 300;
+}
+
+.content{
+    height: fit-content;
+    width: 60%;
+    margin-left: 28%;
+    overflow: hidden;
+}
+
+.content:nth-child(2){
+    margin-top: 8vh;
+}
+
+.content h1{
+    font-size: 7vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 7.5vw;
+    letter-spacing: 0.3vw;
+}
+
+.content h1 span{
+    text-decoration: underline;
+}
+
+.content h1 span:hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 400;
+    text-decoration: none;
 }
