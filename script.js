@@ -52,7 +52,7 @@ function loadingAnimation() {
                 else {
                     h5timer.innerHTML = grow;
                 }
-            }, 33)
+            }, 28)
         }
     })
 
@@ -84,7 +84,8 @@ function loadingAnimation() {
     })
 
     tl.from(".content h1", {
-        y: 120,
+        opacity: 0,
+        y: 150,
         stagger: 0.2
     })
 
