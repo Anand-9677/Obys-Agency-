@@ -19,9 +19,10 @@ html, body{
     border-radius: 50%;
     border: 1.5px solid rgba(255, 255, 255, 0.743);
     position: fixed;
-    z-index: 99;
+    z-index: 999;
     mix-blend-mode: difference;
     transform: translate(-50%, -50%);
+    pointer-events: none;
 }
 
 #loader{
@@ -110,7 +111,7 @@ html, body{
 
 #main{
     position: relative;
-    background-color: #030303;
+    background-color: #151515;
 }
 
 #page1{
@@ -180,10 +181,10 @@ html, body{
 }
 
 #page2{
-    height: 100vh;
+    min-height: 90vh;
     width: 100%;
     background-color: #151515;
-    padding-top: 10vh;
+    margin-top: 15vh;
     position: relative;
 }
 
@@ -462,3 +463,4 @@ html, body{
     font-size: 1.5vw;
     font-weight: 500;
 }
+
